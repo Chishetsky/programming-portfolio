@@ -1,0 +1,21 @@
+// TODO: Reference additional headers your program requires here.
+void welcome_menu();
+void initializer(int operation);
+void new_game();
+void old_game();
+void view_stats();
+void matrix_intitialize();
+void display_window();
+void key_choice(int Direction);
+void Random_creater();
+void down_direction();
+void up_direction();
+void left_direction();
+void right_direction();
+int temp_count();
+void save_game();
+void endgame();
+void menu();
+void save_game_score();
+void old_game_score();
+void entering_name();

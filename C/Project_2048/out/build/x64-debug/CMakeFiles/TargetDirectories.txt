@@ -1,0 +1,5 @@
+D:/Portfolio/C/Project_2048/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/Portfolio/C/Project_2048/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+D:/Portfolio/C/Project_2048/out/build/x64-debug/Project_2048/CMakeFiles/Project_2048.dir
+D:/Portfolio/C/Project_2048/out/build/x64-debug/Project_2048/CMakeFiles/edit_cache.dir
+D:/Portfolio/C/Project_2048/out/build/x64-debug/Project_2048/CMakeFiles/rebuild_cache.dir
