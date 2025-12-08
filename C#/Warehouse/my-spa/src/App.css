@@ -1,0 +1,443 @@
+/* Hlavní layoutovı kontejner */
+#layout_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Pøizpùsobení šíøky */
+}
+html, body {
+    height: 100%; /* To umoní, e procenta v .App budou fungovat */
+    margin: 0; /* Odstraní defaultní okraje */
+    padding: 0; /* Odstraní defaultní padding */
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 70%; /* Nyní nastaveno na 70% šíøky okna prohlíeèe */
+    margin: 0 auto; /* Automatické okraje pro horizontální centrování */
+    width: 100%;
+    height: 80%; /* Nyní to funguje, protoe html a body mají explicitní vıšku */
+}
+
+/* Spoleènı styl pro všechny hlavní bloky */
+ #footer_content {
+  background-color: #c6c6c2;
+  border-radius: 5px;
+  margin: 8px 0; /* Pøidává prostor mezi bloky */
+  padding: 10px;
+  width: calc(100% - 20px); /* Vıpoèet šíøky s paddingem */
+}
+
+/* Styly pro hlavièku */
+#head_content {
+    width: 100%;
+    height: 40px; /* zvıšená vıška o 10px */
+    background-color: #c6c6c2; /* pôvodná farba pozadia */
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head_top {
+    background-color: #393737; /* farba pozadia, ktorá sa rovná cat_top */
+    height: 75%; /* vrchná èas zaberá 75% vıšky head_content */
+    width: 100%; /* zaberá celú šírku */
+    color: white; /* biela farba písma */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em; /* väèšie písmo */
+    font-family: 'Mongolian Baiti';
+}
+
+.user_block {
+    background-color: #c6c6c2;
+    width: 50px;
+    height: 25px;
+    font-size: 7px;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline; /* Podèiarkne text ako odkaz */
+    padding: 5px 5x;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 20px; /* Vertikálne centrování textu */
+    /* Pridajte ïalšie štıly pod¾a potreby */
+}
+
+#head_bottom {
+    height: 25%; /* spodná èas zaberá zvyšnıch 25% vıšky */
+    width: 100%; /* zaberá celú šírku */
+    background-color: #c6c6c2; /* svetlejšia farba pre dolnú èas */
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-link {
+    margin-left: 3px;
+    margin-right: 5px; /* Pøidává prostor mezi odkazy */
+    text-decoration: none; /* Odstráni podèiarknutie odkazov */
+    color: #393737; /* Pouije barvu textu z nadøazeného elementu */
+    font-size: 6px; /* Nastaví ve¾kos fontu */
+    /* Pøidává další styly pod¾a potreby */
+}
+
+.categories-page {
+    text-align: center;
+}
+
+    .categories-page h2 {
+        margin-bottom: 20px;
+    }
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Vytvorí medzeru medzi blokmi */
+}
+
+.category-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Medzera pod blokmi */
+}
+
+.category-name {
+    color: #393737;
+    margin-bottom: 10px; /* Medzera medzi názvom kategórie a obrázkom */
+}
+
+.category-block img {
+    border: 1px solid #ddd; /* Prípadnı rámik okolo obrázku */
+    width: 200px;
+    height: 150px;
+    color: #393737;
+    object-fit: cover; /* Zabezpeèuje, e obrázky sa pekne zmestia do boxu */
+}
+.category-link {
+    text-decoration: none; /* Odstránenie podèiarknutia */
+    color: inherit; /* Zachovanie farby textu */
+}
+
+
+
+
+/* Styly pro pätièku */
+#footer_content {
+    width: 100%;
+    height: 40px; /* zvıšená vıška o 10px */
+    background-color: #c6c6c2; /* pôvodná farba pozadia */
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#footer_top {
+    background-color: #c6c6c2; /* farba pozadia, ktorá sa rovná cat_top */
+    height: 25%; /* vrchná èas zaberá 75% vıšky head_content */
+    width: 100%; /* zaberá celú šírku */
+    color: white; /* biela farba písma */
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px 5px;
+}
+
+#footer_bottom {
+    height: 75%; /* spodná èas zaberá zvyšnıch 25% vıšky */
+    width: 100%; /* zaberá celú šírku */
+    background-color: #393737; /* svetlejšia farba pre dolnú èas */
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 7px;
+    color: white;
+    text-align: center;
+
+}
+
+/* Kontejner pro obsah */
+#content_container {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin: 2px;
+}
+
+/* Styly pro hlavní obsah */
+#main_content {
+    flex-grow: 1; /* Zabere zbıvající prostor */
+    height: calc(100vh - 85px); /* Stejná vıška jako kategorie */
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #c6c6c2;
+    border-radius: 5px;
+    overflow-y: auto; /* Pøidává skrolování pro obsah */
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column; /* Zajišuje vertikální uspoøádání obsahu */
+    align-items: center; /* Zarovná obsah na støed */
+}
+
+    #main_content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    #main_content th, #main_content td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #main_content th {
+        background-color: #393737;
+        color: white;
+    }
+
+    #main_content tr:nth-child(even) {
+        background-color: #bebbbb;
+    }
+
+    #main_content tr:hover {
+        background-color: #ddd;
+    }
+
+
+
+    #main_content .content_top {
+        margin-top:200px; /* Toto je vrchnı okraj pre celı obsahovı blok */
+    }
+
+    #main_content h2 {
+        margin-top: 0; /* Odstraòuje okraj z nadpisu */
+        text-align: center;
+        color: #393737;
+    }
+
+    #main_content table {
+        /* Ak chceš ponecha nejakı priestor medzi nadpisom a tabu¾kou */
+        margin-top: 10px;
+    }
+
+.table-responsive {
+    overflow-y: auto;
+    max-height: 650px; /* Nastavte maximálnu vıšku pre skrolovate¾nú oblas */
+}
+
+th {
+    position: sticky;
+    top: 0; /* Udrí hlavièku na vrchu tabu¾ky */
+    background-color: #FFF; /* alebo akáko¾vek farba, ktorá zodpovedá vašej téme */
+    z-index: 10; /* Uistite sa, e hlavièka zostáva na vrchu pri skrolovaní */
+}
+
+
+
+/* Štıly pro formulár */
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #c6c6c2; /* Ak chcete ma bielé pozadie pre formulár */
+    border-radius: 5px; /* Pre zaoblené rohy */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Pre jemnı tieò okolo formulára */
+    max-width: 100%; /* Zabezpeèí, e formulár neprekroèí šírku main_content */
+}
+
+.required {
+    color: red;
+}
+
+.account-question {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.login-form .required {
+    color: red;
+}
+
+.login-form .error {
+    color: red;
+    margin-top: 5px;
+}
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.login-form .account-query a {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 40px); /* Upraví šírku vstupnıch polí pod¾a paddingu formulára */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Pre jemné okraje */
+    border-radius: 5px; /* Pre zaoblené rohy vstupnıch polí */
+}
+
+button {
+    width: calc(100% - 40px); /* Upraví šírku tlaèidla pod¾a paddingu formulára */
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #393737; /* Tmavé pozadie tlaèidla ako máte v designe */
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Zaoblené rohy tlaèidla */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Ak chcete, aby labely boli nad inputmi, môete prida */
+label {
+    align-self: flex-start;
+    margin-left: 20px; /* Odsadenie z¾ava pod¾a paddingu formulára */
+    margin-bottom: 5px; /* Odstup medzi labelom a inputom */
+}
+
+
+
+#product_detail {
+    display: flex;
+    padding: 10px;
+   
+}
+
+.product_image {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    color: #393737;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc; /* Alternatívny rámèek ak nie je obrázok */
+    margin-right: 20px;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+    .product_info h2, .product_info div {
+        margin-top: 10px; /* Odsadenie medzi polokami */
+        color: #393737;
+    }
+
+    .product_info h2 {
+        margin-top: 0; /* iadne odsadenie pre prvı element (Názov produktu) */
+    }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.pagination button {
+  border: none;
+  background: none;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.pagination button.disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.pagination button.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: blue;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* alebo akáko¾vek farba podkladu, aby bola vidite¾ná nad riadkami */
+    z-index: 10; /* Zabezpeèí, e hlavièka tabu¾ky bude nad obsahom tabu¾ky */
+}
+
+/* Tento kontajner umoní skrolovanie tabu¾ky a udrí hlavièku na mieste */
+.table-scrollable {
+    overflow-y: auto;
+    max-height: 500px; /* Nastavte vhodnú maximálnu vıšku pod¾a potrieb vášho dizajnu */
+}
+
+.users-component table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users-component th, .users-component td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.users-component th {
+    background-color: #393737;
+    color: white;
+}
+
+.users-component tr:nth-child(even) {
+    background-color: #bebbbb;
+}
+
+.users-component tr:hover {
+    background-color: #ddd;
+}
+.users-component h2 {
+    text-align: center;
+    margin-top: 20px; /* Alebo akúko¾vek inú hodnotu, ktorá je konzistentná s ostatnımi nadpismi */
+    color: #393737; /* Prispôsobi farbu, ak je to potrebné */
+    /* Prípadné ïalšie štıly pre nadpis */
+}
+
+
+
+

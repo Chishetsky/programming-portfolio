@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Helpers",
+    "\\Models",
+    "\\my-spa",
+    "\\wwwroot",
+    "\\wwwroot\\images",
+    "\\wwwroot\\static",
+    "\\wwwroot\\static\\css",
+    "\\wwwroot\\static\\js",
+    "\\wwwroot\\static\\media"
+  ],
+  "SelectedNode": "\\Models\\Categories.cs",
+  "PreviewInSolutionExplorer": false
+}

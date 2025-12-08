@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\regform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\regform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\productdetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\productdetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\categoriespage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\categoriespage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\maincontent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\maincontent.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\loginform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\loginform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\pagination.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\pagination.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|d:\\skola_2\\4.semester\\oop\\a\\oop-projekt-main\\my-spa\\src\\table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0FD4B353-A953-41B1-BEAA-A8C47D5D0F38}|Projekt.csproj|solutionrelative:my-spa\\src\\table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\App.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\App.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\App.js",
+              "RelativeToolTip": "my-spa\\src\\App.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T10:34:56.443Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-01T22:43:23.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-01T22:43:20.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T21:53:28.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegForm.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\RegForm.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\RegForm.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\RegForm.js",
+              "RelativeToolTip": "my-spa\\src\\RegForm.js",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T21:39:23.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Orders.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Orders.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\Orders.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Orders.js",
+              "RelativeToolTip": "my-spa\\src\\Orders.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T21:09:11.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T21:09:16.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Users.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Users.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\Users.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Users.js",
+              "RelativeToolTip": "my-spa\\src\\Users.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T21:09:12.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\Models\\Orders.cs",
+              "RelativeDocumentMoniker": "Models\\Orders.cs",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\Models\\Orders.cs",
+              "RelativeToolTip": "Models\\Orders.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T21:00:30.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\LoginForm.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\LoginForm.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\LoginForm.js",
+              "RelativeToolTip": "my-spa\\src\\LoginForm.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T19:03:00.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pagination.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Pagination.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\Pagination.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Pagination.js",
+              "RelativeToolTip": "my-spa\\src\\Pagination.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T14:25:09.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriesPage.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\CategoriesPage.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\CategoriesPage.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\CategoriesPage.js",
+              "RelativeToolTip": "my-spa\\src\\CategoriesPage.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T11:44:10.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductDetail.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\ProductDetail.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\ProductDetail.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\ProductDetail.js",
+              "RelativeToolTip": "my-spa\\src\\ProductDetail.js",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T11:51:16.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Table.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Table.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\Table.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\Table.js",
+              "RelativeToolTip": "my-spa\\src\\Table.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T11:43:45.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainContent.js",
+              "DocumentMoniker": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\MainContent.js",
+              "RelativeDocumentMoniker": "my-spa\\src\\MainContent.js",
+              "ToolTip": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\my-spa\\src\\MainContent.js",
+              "RelativeToolTip": "my-spa\\src\\MainContent.js",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-01T10:35:01.521Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
