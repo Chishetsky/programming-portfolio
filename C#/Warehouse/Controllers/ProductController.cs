@@ -3,7 +3,6 @@ using projekt.Data;
 using projekt.Dtos;
 using projekt.Models;
 
-
 namespace projekt.Controllers
 {
     [ApiController]
@@ -11,6 +10,7 @@ namespace projekt.Controllers
     public class ProductController : ControllerBase
     {
         private readonly DataContextDapper _dapper;
+
         public ProductController(IConfiguration config)
         {
             _dapper = new DataContextDapper(config);
@@ -34,7 +34,8 @@ namespace projekt.Controllers
                        [category_id],
                        [DIN],
                        [photo_url]
-                FROM [Product]";
+                FROM [Products]";
+
             return Ok(_dapper.LoadData<Product>(sql));
         }
 
@@ -50,8 +51,9 @@ namespace projekt.Controllers
                        [category_id],
                        [DIN],
                        [photo_url]
-                FROM [Product]
-                WHERE product_id = {product_id}";
+                FROM [Products]
+                WHERE [product_id] = {product_id}";
+
             return Ok(_dapper.LoadDataSingle<Product>(sql));
         }
 
@@ -59,7 +61,7 @@ namespace projekt.Controllers
         public IActionResult EditProduct(Product product)
         {
             string sql = $@"
-                UPDATE [Product]
+                UPDATE [Products]
                 SET [name] = '{product.name}',
                     [description] = '{product.description}',
                     [price] = {product.price},
@@ -68,6 +70,7 @@ namespace projekt.Controllers
                     [DIN] = '{product.DIN}',
                     [photo_url] = '{product.photo_url}'
                 WHERE [product_id] = {product.product_id}";
+
             return ExecuteSql(sql);
         }
 
@@ -75,8 +78,12 @@ namespace projekt.Controllers
         public IActionResult AddProduct(ProductToAddDto product)
         {
             string sql = $@"
-                INSERT INTO [Product] ([name], [description], [price], [stock_quantity], [category_id], [DIN], [photo_url])
-                VALUES ('{product.name}', '{product.description}', {product.price}, {product.stock_quantity}, {product.category_id}, '{product.DIN}', '{product.photo_url}')";
+                INSERT INTO [Products] 
+                    ([name], [description], [price], [stock_quantity], [category_id], [DIN], [photo_url])
+                VALUES 
+                    ('{product.name}', '{product.description}', {product.price}, 
+                     {product.stock_quantity}, {product.category_id}, '{product.DIN}', '{product.photo_url}')";
+
             return ExecuteSql(sql);
         }
 
@@ -84,8 +91,9 @@ namespace projekt.Controllers
         public IActionResult DeleteProduct(int product_id)
         {
             string sql = $@"
-                DELETE FROM [Product]
-                WHERE product_id = {product_id}";
+                DELETE FROM [Products]
+                WHERE [product_id] = {product_id}";
+
             return ExecuteSql(sql);
         }
 
@@ -94,15 +102,16 @@ namespace projekt.Controllers
         {
             string sql = $@"
                 SELECT [product_id],
-                    [name],
-                    [description],
-                    [price],
-                    [stock_quantity],
-                    [category_id],
-                    [DIN],
-                    [photo_url]
-                    FROM [Product]
-             WHERE [category_id] = {category_id}";
+                       [name],
+                       [description],
+                       [price],
+                       [stock_quantity],
+                       [category_id],
+                       [DIN],
+                       [photo_url]
+                FROM [Products]
+                WHERE [category_id] = {category_id}";
+
             return Ok(_dapper.LoadData<Product>(sql));
         }
 
@@ -110,6 +119,7 @@ namespace projekt.Controllers
         {
             if (_dapper.ExecuteSql(sql))
                 return Ok();
+
             throw new Exception("Failed to execute SQL query");
         }
     }

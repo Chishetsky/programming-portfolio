@@ -32,7 +32,8 @@ namespace projekt.Controllers
                        [product_id],
                        [quantity],
                        [price_per_unit]
-                FROM [Order_Item]";
+                FROM [OrderItems]";
+
             return Ok(_dapper.LoadData<OrderItem>(sql));
         }
 
@@ -45,8 +46,9 @@ namespace projekt.Controllers
                        [product_id],
                        [quantity],
                        [price_per_unit]
-                FROM [Order_Item]
-                WHERE order_item_id = {order_item_id}";
+                FROM [OrderItems]
+                WHERE [order_item_id] = {order_item_id}";
+
             return Ok(_dapper.LoadDataSingle<OrderItem>(sql));
         }
 
@@ -54,8 +56,11 @@ namespace projekt.Controllers
         public IActionResult AddOrderItem(OrderItem orderItem)
         {
             string sql = $@"
-                INSERT INTO [Order_Item] ([order_id], [product_id], [quantity], [price_per_unit])
-                VALUES ({orderItem.order_id}, {orderItem.product_id}, {orderItem.quantity}, {orderItem.price_per_unit})";
+                INSERT INTO [OrderItems] 
+                    ([order_id], [product_id], [quantity], [price_per_unit])
+                VALUES 
+                    ({orderItem.order_id}, {orderItem.product_id}, {orderItem.quantity}, {orderItem.price_per_unit})";
+
             return ExecuteSql(sql);
         }
 
@@ -63,12 +68,13 @@ namespace projekt.Controllers
         public IActionResult EditOrderItem(OrderItem orderItem)
         {
             string sql = $@"
-                UPDATE [Order_Item]
+                UPDATE [OrderItems]
                 SET [order_id] = {orderItem.order_id},
                     [product_id] = {orderItem.product_id},
                     [quantity] = {orderItem.quantity},
                     [price_per_unit] = {orderItem.price_per_unit}
                 WHERE [order_item_id] = {orderItem.order_item_id}";
+
             return ExecuteSql(sql);
         }
 
@@ -76,8 +82,9 @@ namespace projekt.Controllers
         public IActionResult DeleteOrderItem(int order_item_id)
         {
             string sql = $@"
-                DELETE FROM [Order_Item]
-                WHERE order_item_id = {order_item_id}";
+                DELETE FROM [OrderItems]
+                WHERE [order_item_id] = {order_item_id}";
+
             return ExecuteSql(sql);
         }
 
@@ -85,6 +92,7 @@ namespace projekt.Controllers
         {
             if (_dapper.ExecuteSql(sql))
                 return Ok();
+
             throw new Exception("Failed to execute SQL query");
         }
     }

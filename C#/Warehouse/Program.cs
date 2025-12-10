@@ -6,6 +6,12 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// DEBUG: Show which connection string is being used
+Console.WriteLine("=== LOADED CONNECTION STRING ===");
+Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection"));
+Console.WriteLine("================================");
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -61,6 +67,8 @@ else
     app.UseCors("ProdCors");
     app.UseHttpsRedirection();
 }
+
+app.UseStaticFiles();
 
 app.UseAuthentication();
 

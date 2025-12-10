@@ -8,13 +8,14 @@ namespace projekt.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-public class CategoryController  : ControllerBase
-{
-    private readonly DataContextDapper _dapper;
-   public CategoryController (IConfiguration config)
-   {
-        _dapper = new DataContextDapper(config);
-   }
+    public class CategoryController : ControllerBase
+    {
+        private readonly DataContextDapper _dapper;
+
+        public CategoryController(IConfiguration config)
+        {
+            _dapper = new DataContextDapper(config);
+        }
 
         [HttpGet("TestConnection")]
         public IActionResult TestConnection()
@@ -29,7 +30,7 @@ public class CategoryController  : ControllerBase
                 SELECT [category_id],
                        [name],
                        [photo_url]
-                FROM [Category]";
+                FROM [Categories]";
             return Ok(_dapper.LoadData<Category>(sql));
         }
 
@@ -40,7 +41,7 @@ public class CategoryController  : ControllerBase
                 SELECT [category_id],
                        [name],
                        [photo_url]
-                FROM [Category]
+                FROM [Categories]
                 WHERE category_id = {category_id}";
             return Ok(_dapper.LoadDataSingle<Category>(sql));
         }
@@ -49,7 +50,7 @@ public class CategoryController  : ControllerBase
         public IActionResult AddCategory(Category category)
         {
             string sql = $@"
-                INSERT INTO [Category] ([name], [photo_url])
+                INSERT INTO [Categories] ([name], [photo_url])
                 VALUES ('{category.name}', '{category.photo_url}')";
             return ExecuteSql(sql);
         }
@@ -58,7 +59,7 @@ public class CategoryController  : ControllerBase
         public IActionResult EditCategory(Category category)
         {
             string sql = $@"
-                UPDATE [Category]
+                UPDATE [Categories]
                 SET [name] = '{category.name}',
                     [photo_url] = '{category.photo_url}'
                 WHERE [category_id] = {category.category_id}";
@@ -69,7 +70,7 @@ public class CategoryController  : ControllerBase
         public IActionResult DeleteCategory(int category_id)
         {
             string sql = $@"
-                DELETE FROM [Category]
+                DELETE FROM [Categories]
                 WHERE category_id = {category_id}";
             return ExecuteSql(sql);
         }

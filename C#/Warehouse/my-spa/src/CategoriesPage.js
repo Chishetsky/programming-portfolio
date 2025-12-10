@@ -35,7 +35,8 @@ const CategoriesPage = () => {
             <div className="categories-container">
                 {categories.map(category => (
                     // Prenos categoryId do CategoryBlock
-                    <CategoryBlock key={category.category_id} categoryId={category.category_id} categoryName={category.name} imageUrl={category.photo_url} />
+                    <CategoryBlock key={category.category_id} categoryId={category.category_id} categoryName={category.name} imageUrl={`http://localhost:5000${category.photo_url}`}
+ />
                 ))}
             </div>
         </div>

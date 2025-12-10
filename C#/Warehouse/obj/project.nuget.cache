@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mncF1b9DpwhVO7/9vCpoZto9i2SAyrb3pS8shmDc5i626JoBQaoPuJ7L2/5TI4wjwDOFTwhze7Wfmocnk9Dymg==",
+  "dgSpecHash": "KBI4jP+5enA=",
   "success": true,
-  "projectFilePath": "D:\\Skola_2\\4.semester\\OOP\\a\\OOP-Projekt-main\\Projekt.csproj",
+  "projectFilePath": "D:\\Portfolio\\C#\\Warehouse\\Projekt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tomáš\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Tomáš\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using projekt.Data;
 using projekt.Models;
-using System;
-using System.Collections.Generic;
 
 namespace projekt.Controllers
 {
@@ -17,10 +15,12 @@ namespace projekt.Controllers
             _dapper = new DataContextDapper(config);
         }
 
-        [HttpGet("TestConnection")]
-        public IActionResult TestConnection()
+        private IActionResult ExecuteSql(string sql)
         {
-            return Ok(_dapper.LoadDataSingle<DateTime>("SELECT GETDATE()"));
+            if (_dapper.ExecuteSql(sql))
+                return Ok();
+
+            throw new Exception("SQL execution failed");
         }
 
         [HttpGet("GetOrders")]
@@ -31,7 +31,8 @@ namespace projekt.Controllers
                        [user_id],
                        [order_date],
                        [status]
-                FROM [Order]";
+                FROM [Orders]";
+
             return Ok(_dapper.LoadData<Order>(sql));
         }
 
@@ -43,8 +44,9 @@ namespace projekt.Controllers
                        [user_id],
                        [order_date],
                        [status]
-                FROM [Order]
+                FROM [Orders]
                 WHERE order_id = {order_id}";
+
             return Ok(_dapper.LoadDataSingle<Order>(sql));
         }
 
@@ -52,8 +54,9 @@ namespace projekt.Controllers
         public IActionResult AddOrder(Order order)
         {
             string sql = $@"
-                INSERT INTO [Order] ([user_id], [order_date], [status])
+                INSERT INTO [Orders] ([user_id], [order_date], [status])
                 VALUES ({order.user_id}, '{order.order_date}', '{order.status}')";
+
             return ExecuteSql(sql);
         }
 
@@ -61,11 +64,12 @@ namespace projekt.Controllers
         public IActionResult EditOrder(Order order)
         {
             string sql = $@"
-                UPDATE [Order]
+                UPDATE [Orders]
                 SET [user_id] = {order.user_id},
                     [order_date] = '{order.order_date}',
                     [status] = '{order.status}'
                 WHERE [order_id] = {order.order_id}";
+
             return ExecuteSql(sql);
         }
 
@@ -73,16 +77,10 @@ namespace projekt.Controllers
         public IActionResult DeleteOrder(int order_id)
         {
             string sql = $@"
-                DELETE FROM [Order]
+                DELETE FROM [Orders]
                 WHERE order_id = {order_id}";
-            return ExecuteSql(sql);
-        }
 
-        private IActionResult ExecuteSql(string sql)
-        {
-            if (_dapper.ExecuteSql(sql))
-                return Ok();
-            throw new Exception("Failed to execute SQL query");
+            return ExecuteSql(sql);
         }
     }
 }

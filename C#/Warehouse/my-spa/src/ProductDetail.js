@@ -14,6 +14,8 @@ const ProductDetail = () => {
                     return response.json();
                 })
                 .then(data => {
+                    // DOPLNENIE FULL URL K OBRÁZKU
+                    data.photo_url = `http://localhost:5000${data.photo_url}`;
                     setProduct(data);
                 })
                 .catch(error => {
@@ -31,7 +33,7 @@ const ProductDetail = () => {
     const handleBackClick = () => {
         navigate(-1);
     };
-    console.log('Product obrazok: ', product.photo_url);
+
     const handleOrderClick = () => {
         navigate('/order-form', { state: { product } });
     };
@@ -40,17 +42,22 @@ const ProductDetail = () => {
         <div id="product_detail">
             <div className="product_image">
                 {product.photo_url ? (
-                    <img src={product.photo_url} alt="Produktový obrázok" style={{ width: '100%', height: '100%' }} />
+                    <img
+                        src={product.photo_url}
+                        alt="Produktový obrázok"
+                        style={{ width: '100%', height: '100%' }}
+                    />
                 ) : (
                     <span>Tu bude obrázok</span>
                 )}
             </div>
             <div className="product_info">
                 <h2>{product.name}</h2>
-                <div><strong>Cena:</strong> {product.price} Kč </div>
+                <div><strong>Cena:</strong> {product.price} Kč</div>
                 <div><strong>Popis:</strong> {product.description}</div>
                 <div><strong>Dostupné množstvo:</strong> {product.stock_quantity} ks</div>
                 <div><strong>DIN:</strong> {product.din}</div>
+
                 <button onClick={handleBackClick}>Späť na zoznam produktov</button>
                 <button onClick={handleOrderClick}>Objednať</button>
             </div>
