@@ -1,0 +1,242 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 268435456 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3703), pid=6204, tid=22516
+#
+# JRE version:  (23.0+37) (build )
+# Java VM: OpenJDK 64-Bit Server VM (23+37-2369, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=58044:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 Main
+
+Host: AMD Ryzen 5 1600X Six-Core Processor           , 12 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.5198)
+Time: Fri Dec 13 18:45:44 2024 Stredoeurópsky 4 bit Build 19041 (10.0.19041.5198) elapsed time: 0.020669 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001b9b5ae6fa0):  JavaThread "Unknown thread" [_thread_in_vm, id=22516, stack(0x00000047cd800000,0x00000047cd900000) (1024K)]
+
+Stack: [0x00000047cd800000,0x00000047cd900000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6e08a9]  (no source info available)
+V  [jvm.dll+0x87da63]  (no source info available)
+V  [jvm.dll+0x87feee]  (no source info available)
+V  [jvm.dll+0x8805c3]  (no source info available)
+V  [jvm.dll+0x27aee6]  (no source info available)
+V  [jvm.dll+0x6dd1b5]  (no source info available)
+V  [jvm.dll+0x6d103a]  (no source info available)
+V  [jvm.dll+0x35b3ea]  (no source info available)
+V  [jvm.dll+0x3637f6]  (no source info available)
+V  [jvm.dll+0x34fd5e]  (no source info available)
+V  [jvm.dll+0x34fff8]  (no source info available)
+V  [jvm.dll+0x3289cc]  (no source info available)
+V  [jvm.dll+0x32966e]  (no source info available)
+V  [jvm.dll+0x8442e5]  (no source info available)
+V  [jvm.dll+0x3b9848]  (no source info available)
+V  [jvm.dll+0x82d0dc]  (no source info available)
+V  [jvm.dll+0x454d4e]  (no source info available)
+V  [jvm.dll+0x456bd1]  (no source info available)
+C  [jli.dll+0x52a3]  (no source info available)
+C  [ucrtbase.dll+0x21bb2]  (no source info available)
+C  [KERNEL32.DLL+0x17374]  (no source info available)
+C  [ntdll.dll+0x4cc91]  (no source info available)
+
+Lock stack of current Java thread (top to bottom):
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff97fd93618, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x000001b9b5b50da0 WorkerThread "GC Thread#0"                     [id=25140, stack(0x00000047cd900000,0x00000047cda00000) (1024K)]
+  0x000001b9b5b65f90 ConcurrentGCThread "G1 Main Marker"            [id=23304, stack(0x00000047cda00000,0x00000047cdb00000) (1024K)]
+  0x000001b9b5b69730 WorkerThread "G1 Conc#0"                       [id=20224, stack(0x00000047cdb00000,0x00000047cdc00000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff97f4dbfba]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ff97fe13a10] Heap_lock - owner thread: 0x000001b9b5ae6fa0
+
+Heap address: 0x0000000700a00000, size: 4086 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 16 size 48 Howl #buckets 8 coarsen threshold 3686 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 4096
+
+Heap:
+ garbage-first heap   total reserved 4184064K, committed 0K, used 0K [0x0000000700a00000, 0x0000000800000000)
+  region size 2048K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff97f8dc3b9]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.011 Loaded shared library C:\Users\Tomáš\.jdks\openjdk-23\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff765030000 - 0x00007ff76503e000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\java.exe
+0x00007ff9e4a90000 - 0x00007ff9e4c88000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff9c4300000 - 0x00007ff9c431a000 	C:\Program Files\AVAST Software\Avast\aswhook.dll
+0x00007ff9e3d20000 - 0x00007ff9e3de2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff9e2290000 - 0x00007ff9e258e000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff9e2130000 - 0x00007ff9e2230000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff9ca290000 - 0x00007ff9ca2ab000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\VCRUNTIME140.dll
+0x00007ff9ca9c0000 - 0x00007ff9ca9d7000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\jli.dll
+0x00007ff9e4440000 - 0x00007ff9e45dd000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff9d3d10000 - 0x00007ff9d3faa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.4355_none_60b8b9eb71f62e16\COMCTL32.dll
+0x00007ff9e2260000 - 0x00007ff9e2282000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff9e45e0000 - 0x00007ff9e467e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff9e2ab0000 - 0x00007ff9e2adb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff9e28f0000 - 0x00007ff9e2a07000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff9e2a10000 - 0x00007ff9e2aad000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff9e3890000 - 0x00007ff9e38bf000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff9d6b80000 - 0x00007ff9d6b8c000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\vcruntime140_1.dll
+0x00007ff9c0690000 - 0x00007ff9c071e000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\msvcp140.dll
+0x00007ff97f1a0000 - 0x00007ff97feef000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\server\jvm.dll
+0x00007ff9e3920000 - 0x00007ff9e39d1000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff9e37f0000 - 0x00007ff9e388f000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff9e39e0000 - 0x00007ff9e3b03000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff9e2230000 - 0x00007ff9e2257000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ff9e3c50000 - 0x00007ff9e3cbb000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff9e1a60000 - 0x00007ff9e1aab000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ff9da3a0000 - 0x00007ff9da3c7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff9dc330000 - 0x00007ff9dc33a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff9e1a40000 - 0x00007ff9e1a52000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ff9e0930000 - 0x00007ff9e0942000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff9caa10000 - 0x00007ff9caa1a000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\jimage.dll
+0x00007ff9dfdf0000 - 0x00007ff9dffd4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff9db600000 - 0x00007ff9db634000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff9e26f0000 - 0x00007ff9e2772000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff9ca740000 - 0x00007ff9ca74f000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\instrument.dll
+0x00007ff9ca270000 - 0x00007ff9ca28e000 	C:\Users\Tomáš\.jdks\openjdk-23\bin\java.dll
+0x00007ff9e36c0000 - 0x00007ff9e37eb000 	C:\WINDOWS\System32\ole32.dll
+0x00007ff9e3e70000 - 0x00007ff9e41c3000 	C:\WINDOWS\System32\combase.dll
+0x00007ff9e2f50000 - 0x00007ff9e36bd000 	C:\WINDOWS\System32\SHELL32.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Tomáš\.jdks\openjdk-23\bin;C:\WINDOWS\SYSTEM32;C:\Program Files\AVAST Software\Avast;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.4355_none_60b8b9eb71f62e16;C:\Users\Tomáš\.jdks\openjdk-23\bin\server
+
+VM Arguments:
+jvm_args: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=58044:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 
+java_command: Main
+java_class_path (initial): C:\Users\Tomáš\IdeaProjects\Bachelor_Thesis\out\production\Bachelor_Thesis
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MarkStackSizeMax                         = 536870912                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 4284481536                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832704                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122945536                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122880000                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4284481536                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-9.0.4
+PATH=C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk-9.0.4\bin;C:\Program Files\Java\jre-9.0.4\bin;C:\WINDOWS\System32\OpenSSH\;C:\PHP7;D:\PGM\PHP7;C:\Program Files (x86)\Common Files\Adobe\AGL;C:\Program Files\Java\jdk-14.0.2\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\Tomáš\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Tomáš\AppData\Local\Programs\Python\Python39\;C:\Users\Tomáš\AppData\Local\Microsoft\WindowsApps;C:\Users\Tomáš\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\DataGrip 2021.3.4\bin;;C:\Program Files\JetBrains\PyCharm 2021.3.3\bin;;C:\Users\Tomáš\.dotnet\tools;C:\Users\Tomáš\AppData\Local\Programs\Azure Data Studio\bin;C:\Users\Tomáš\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.3\bin;;C:\Program Files\Java\jdk-23\bin;
+USERNAME=Tomáš
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+TMP=C:\Users\TOM~1\AppData\Local\Temp
+TEMP=C:\Users\TOM~1\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.5198)
+OS uptime: 0 days 2:33 hours
+Hyper-V role detected
+
+CPU: total 12 (initial active 12) (12 cores per cpu, 2 threads per core) family 23 model 1 stepping 1 microcode 0x0, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, hv, rdtscp, f16c
+Processor Information for the first 12 processors :
+  Max Mhz: 3600, Current Mhz: 3600, Mhz Limit: 3600
+
+Memory: 4k page, system-wide physical 16339M (2126M free)
+TotalPageFile size 24350M (AvailPageFile size 2M)
+current process WorkingSet (physical memory assigned to process): 12M, peak: 12M
+current process commit charge ("private bytes"): 65M, peak: 320M
+
+vm_info: OpenJDK 64-Bit Server VM (23+37-2369) for windows-amd64 JRE (23+37-2369), built on 2024-08-20T16:01:23Z with MS VC++ 17.6 (VS2022)
+
+END.
