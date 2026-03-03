@@ -9,3 +9,19 @@ of my Bachelor thesis and demonstrates:
 -  Forward Open / Forward Close handling
 -  Basic implicit mesaging over UDP
 -  Modular CIP object library implementation
+
+It provides standalone GUI apllictaion for testing in EtherNet/IP network.
+
+## Architecture
+
+The project is structured into modular components:
+
+-  `Main.java` - core communication logic
+-  `ENIP_form.java` - GUI layer
+-  `Encapsulation_packet.java` - construcion of basic ENIP packet
+-  `Data_segment_parameters.java` - construction of service-specific data segments
+-  `ENIP_form.form` - GUI layout definition
+-  `CIP_attribute_format.java` - definition of CIP attribute metadata
+-  `CIP_segment_parameters.java` - building of CIP path segments
+-  `CIP_object_format.java` - CIP object architecture
+-  `CIP_object_library.java` - collection of implemented CIP objects
