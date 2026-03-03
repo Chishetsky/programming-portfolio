@@ -25,3 +25,12 @@ The project is structured into modular components:
 -  `CIP_segment_parameters.java` - building of CIP path segments
 -  `CIP_object_format.java` - CIP object architecture
 -  `CIP_object_library.java` - collection of implemented CIP objects
+ 
+ ## Purpose
+
+ The goal of this project was to deeply understand:
+ - EtherNet/IP encapsulation
+ - CIP object model
+ - Explicit vs implicit messaging
+ - Industrial communication principles
+ 
