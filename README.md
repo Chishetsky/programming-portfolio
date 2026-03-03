@@ -1,2 +1,6 @@
-# My programming-portfolio
-This is the collection of my major programming projects in Java, C, C#, PHP, and Web Development. This repository serves as my personal developer portfolio.
+# My Programming Portfolio
+
+A curated collection of my programming projects across multiple technologies, including Java, C, C#, PHP and Web Development.
+
+This repository my personal software engineering portfolio.
+
