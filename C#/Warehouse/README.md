@@ -45,6 +45,18 @@ Program.cs - application startup and middleware configuration
 ```
 ---
 
+##  API Modules
+
+-  **AuthController** - authentication (register, login, refresh token)
+-  **ProductController** - product management
+-  **CategoryController** - category management
+-  **OrderController** - order management
+-  **OrderItemController** - order item management
+-  **UserController** - user management
+
+---
+
+
 ##  Application Preview
 
 ###  Users Management
@@ -64,4 +76,10 @@ Program.cs - application startup and middleware configuration
 ![ProductDetail](OVERVIEW/ProductDetail.png)
 
 ---
+
+##  Purpose
+
+This project demonstrates backend development using ASP.NET Core, including REST API design,
+authentication and database integration.
+
 
