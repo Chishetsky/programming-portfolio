@@ -5,7 +5,9 @@ Backend REST API for a simple warehouse / e-commerce system built with **ASP.NET
 The application provides endpoints for managing products, categories, users and orders,
 including authentication using **JWT tokens**. The project demonstrates basic backend 
 development concepts such as REST API design, database interaction and authentication.
-It also provides front end by SPA developed in React+VUE.
+
+The project also contains a simple SPA frontend built with React that communicates
+with the ASP.NET Core API.
 
 ---
 
@@ -23,7 +25,9 @@ It also provides front end by SPA developed in React+VUE.
 ---
 
 ##  Technologies
+-  **C#**
 -  **ASP.NET Core Web API**
+-  **React (SPA frontend)**
 -  **Dapper ORM**
 -  **SQL Server**
 -  **JWT Authentication**
@@ -37,7 +41,7 @@ Controllers/ - REST API endpoints
 Data/ - database access using Dapper
 Dtos/ - data transfer objects used for API communication
 Models/ - database entity models
-Helpers/ - authentication helper (passsword hashing, JWT token generation)
+Helpers/ - authentication helper (password hashing, JWT token generation)
 wwwroot/ - static files and frontend build
 my-spa/ - frontend single-page application
 
@@ -71,7 +75,7 @@ Program.cs - application startup and middleware configuration
 
 ![Categories](OVERVIEW/Categories.png)
 
-###  Product detail
+###  Product Detail
 
 ![ProductDetail](OVERVIEW/ProductDetail.png)
 
