@@ -60,6 +60,15 @@ Gameplay loop:
 
 ---
 
+##  Project Structure
+```
+Project_2048.cpp - main game logic
+Project_2048.h - constants and libraries
+functions.h - function declarations
+CMakeLists.txt - build configuration
+```
+
+
 
    
 
