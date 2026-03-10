@@ -1,4 +1,4 @@
-#2048 Game (C Console Application)
+#  2048 Game (C Console Application)
 
 Simple console implementation of the classsic **2048 game** written in **C**.
 
