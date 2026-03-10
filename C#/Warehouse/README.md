@@ -34,6 +34,14 @@ It also provides front end by SPA developed in React+VUE.
 ##  Project Structure
 ```
 Controllers/ - REST API endpoints
+Data/ - database access using Dapper
+Dtos/ - data transfer objects used for API communication
+Models/ - database entity models
+Helpers/ - authentication helper (passsword hashing, JWT token generation)
+wwwroot/ - static files and frontend build
+my-spa/ - frontend single-page application
+
+Program.cs - application startup and middleware configuration
 ```
 ---
 
