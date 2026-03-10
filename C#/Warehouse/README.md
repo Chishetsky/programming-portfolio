@@ -9,6 +9,30 @@ It also provides front end by SPA developed in React+VUE.
 
 ---
 
+##  Features
+
+-  User registration and login
+-  JWT authentication
+-  Product management
+-  Category management
+-  Order management
+-  Order item management
+-  REST API architecture
+-  Database access using **Dapper ORM**
+
+---
+
+##  Technologies
+-  **ASP.NET Core Web API**
+-  **Dapper ORM**
+-  **SQL Server**
+-  **JWT Authentication**
+-  **Swagger / OpenAPI**
+
+---
+
+---
+
 ##  Application Preview
 
 ###  Users Management
