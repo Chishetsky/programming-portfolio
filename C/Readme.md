@@ -1,1 +1,1 @@
-THIS FOLDER CONTAINS MY PROJECTS IN C LANGUAGE
+This folder contains projects written in C language.
