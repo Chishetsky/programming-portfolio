@@ -33,7 +33,7 @@ the best scores.
 
 ---
 
-##  How the Game Works
+##How the Game Works
 
 The game uses a **4x4 matrix** representing the game board.
 
@@ -47,8 +47,19 @@ Gameplay loop:
 6. The game continues until:
     -the player reaches **2048** (win),
     -no more moves are possible (game over)
+    
+---
+
+##  Controls
+
+| Key | Action |
+|-----|------|
+| Arrow keys | Move titles |
+| W A S D | Alternative movement |
+| Space | Save and exit game |
 
 ---
+
 
    
 
