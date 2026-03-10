@@ -23,5 +23,9 @@ It also provides front end by SPA developed in React+VUE.
 
 ![Categories](OVERVIEW/Categories.png)
 
+###  Product detail
+
+![ProductDetail](OVERVIEW/ProductDetail.png)
+
 ---
 
