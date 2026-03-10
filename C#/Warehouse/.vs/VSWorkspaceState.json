@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\Models",
-    "\\my-spa",
+    "\\Dtos",
+    "\\Helpers",
     "\\wwwroot",
     "\\wwwroot\\images",
     "\\wwwroot\\static",
@@ -11,5 +11,6 @@
     "\\wwwroot\\static\\js",
     "\\wwwroot\\static\\media"
   ],
+  "SelectedNode": "\\Controllers\\AuthController.cs",
   "PreviewInSolutionExplorer": false
 }

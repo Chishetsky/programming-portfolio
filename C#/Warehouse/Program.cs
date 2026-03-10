@@ -4,20 +4,15 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
+//VYTVORENIE BUILDERA APLIKACIE
 var builder = WebApplication.CreateBuilder(args);
 
-// DEBUG: Show which connection string is being used
-Console.WriteLine("=== LOADED CONNECTION STRING ===");
-Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection"));
-Console.WriteLine("================================");
-
-
-// Add services to the container.
-
+//REGISTRACIA SLUZIEB
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//KONFIGURACIA CORS
 builder.Services.AddCors((options) =>
     {
         options.AddPolicy("DevCors", (corsBuilder) =>
@@ -37,7 +32,7 @@ builder.Services.AddCors((options) =>
     });
 
 
-
+//JWT AUTENTIFIKACIA
 string? tokenKeyString = builder.Configuration.GetSection("AppSettings:TokenKey").Value;
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -53,9 +48,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             };
         });
 
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+//NASTAVENIE PROSTREDIA
 if (app.Environment.IsDevelopment())
 {
     app.UseCors("DevCors");
@@ -70,8 +66,8 @@ else
 
 app.UseStaticFiles();
 
+//MIDDLEWARE PRE AUTENTIFIKACIU A AUTORIZACIU
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllers();

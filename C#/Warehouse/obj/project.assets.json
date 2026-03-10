@@ -2195,11 +2195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Portfolio\\C#\\Warehouse\\Projekt.csproj",
+      "projectUniqueName": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Projekt.csproj",
       "projectName": "Projekt",
-      "projectPath": "D:\\Portfolio\\C#\\Warehouse\\Projekt.csproj",
+      "projectPath": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Projekt.csproj",
       "packagesPath": "C:\\Users\\Tomáš\\.nuget\\packages\\",
-      "outputPath": "D:\\Portfolio\\C#\\Warehouse\\obj\\",
+      "outputPath": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

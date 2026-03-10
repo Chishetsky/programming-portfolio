@@ -27,7 +27,7 @@ namespace projekt.Controllers
             _dapper = new DataContextDapper(config);
             _authHelper = new AuthHelper(config);
         }
-
+        //ENDPOINT: "POSSST /Auth/Rergister"
         [AllowAnonymous]
         [HttpPost("Register")]
         public IActionResult Register(UserForRegistrationDto userForRegistration)
@@ -93,7 +93,7 @@ namespace projekt.Controllers
             }
             throw new Exception("Passwords do not match!");
         }
-
+        //Endpoint: "POST /Auth/Login"
         [AllowAnonymous]
         [HttpPost("Login")]
         public IActionResult Login(UserForLoginDto userForLogin)
@@ -127,7 +127,7 @@ namespace projekt.Controllers
                 {"token", _authHelper.CreateToken(userId)}
             });
         }
-
+        //ENDPOINT: "GET /Auth/RefreshToken"
         [HttpGet("RefreshToken")]
         public string RefreshToken()
         {
