@@ -10,18 +10,18 @@ namespace projekt.Controllers
     public class ProductController : ControllerBase
     {
         private readonly DataContextDapper _dapper;
-
+        //DI KONFIGURACIE PRE DATABAZU
         public ProductController(IConfiguration config)
         {
             _dapper = new DataContextDapper(config);
         }
-
+        //Endpoint: GET /Product/TestConnection
         [HttpGet("TestConnection")]
         public IActionResult TestConnection()
         {
             return Ok(_dapper.LoadDataSingle<DateTime>("SELECT GETDATE()"));
         }
-
+        //Endpoint: GET /Product/GetProducts
         [HttpGet("GetProducts")]
         public IActionResult GetProducts()
         {
@@ -38,7 +38,7 @@ namespace projekt.Controllers
 
             return Ok(_dapper.LoadData<Product>(sql));
         }
-
+        //Endpoint: GET /Product/GetProduct/product_id
         [HttpGet("GetProduct/{product_id}")]
         public IActionResult GetProduct(int product_id)
         {
@@ -56,7 +56,7 @@ namespace projekt.Controllers
 
             return Ok(_dapper.LoadDataSingle<Product>(sql));
         }
-
+        //Endpoint: PUT /Product/EditProduct
         [HttpPut("EditProduct")]
         public IActionResult EditProduct(Product product)
         {
@@ -73,7 +73,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //Endpoint: POST /Product/AddProduct
         [HttpPost("AddProduct")]
         public IActionResult AddProduct(ProductToAddDto product)
         {
@@ -86,7 +86,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //Endpoint: DELETE /Product/DeleteProduct/product_id
         [HttpDelete("DeleteProduct/{product_id}")]
         public IActionResult DeleteProduct(int product_id)
         {
@@ -96,7 +96,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //Endpoint: GET /Product/GetProductsByCategory/category_id
         [HttpGet("GetProductsByCategory/{category_id}")]
         public IActionResult GetProductsByCategory(int category_id)
         {
@@ -114,7 +114,7 @@ namespace projekt.Controllers
 
             return Ok(_dapper.LoadData<Product>(sql));
         }
-
+        //HELPER METODA NA VYKONANIE DOTAZU
         private IActionResult ExecuteSql(string sql)
         {
             if (_dapper.ExecuteSql(sql))

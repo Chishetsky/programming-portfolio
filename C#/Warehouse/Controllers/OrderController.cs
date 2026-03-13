@@ -10,11 +10,12 @@ namespace projekt.Controllers
     {
         private readonly DataContextDapper _dapper;
 
+        //DI KONFIGURACIE PRE DATABAZU
         public OrderController(IConfiguration config)
         {
             _dapper = new DataContextDapper(config);
         }
-
+        //HELPER METODA NA VYKONANIE DOTAZU
         private IActionResult ExecuteSql(string sql)
         {
             if (_dapper.ExecuteSql(sql))
@@ -22,7 +23,7 @@ namespace projekt.Controllers
 
             throw new Exception("SQL execution failed");
         }
-
+        //Endpoint: GET /Order/GetOrders
         [HttpGet("GetOrders")]
         public IActionResult GetOrders()
         {
@@ -35,7 +36,7 @@ namespace projekt.Controllers
 
             return Ok(_dapper.LoadData<Order>(sql));
         }
-
+        //Endpoint: GET /Order/GetOrder/order_id
         [HttpGet("GetOrder/{order_id}")]
         public IActionResult GetOrder(int order_id)
         {
@@ -49,7 +50,7 @@ namespace projekt.Controllers
 
             return Ok(_dapper.LoadDataSingle<Order>(sql));
         }
-
+        //Endpoint: POST /Order/AddOrder
         [HttpPost("AddOrder")]
         public IActionResult AddOrder(Order order)
         {
@@ -59,7 +60,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //Endpoint: PUT /Order/EditOrder
         [HttpPut("EditOrder")]
         public IActionResult EditOrder(Order order)
         {
@@ -72,7 +73,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //Endpoint: DELETE /Order/DeleteOrder/order_id
         [HttpDelete("DeleteOrder/{order_id}")]
         public IActionResult DeleteOrder(int order_id)
         {

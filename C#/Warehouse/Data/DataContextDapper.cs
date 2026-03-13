@@ -12,12 +12,12 @@ namespace projekt.Data
         {
             _config = config;
         }
-
+        //VYTVORENIE SPOJENIA S DB
         private IDbConnection CreateConnection()
         {
             return new SqlConnection(_config.GetConnectionString("DefaultConnection"));
         }
-
+        //NACITANIE VIACERYCH DAT
         public IEnumerable<T> LoadData<T>(string sql)
         {
             using (IDbConnection connection = CreateConnection())
@@ -25,7 +25,7 @@ namespace projekt.Data
                 return connection.Query<T>(sql);
             }
         }
-
+        //NACIATANIE JEDNHEO ZAZNAMU
         public T LoadDataSingle<T>(string sql)
         {
             using (IDbConnection connection = CreateConnection())
@@ -33,7 +33,7 @@ namespace projekt.Data
                 return connection.QuerySingle<T>(sql);
             }
         }
-
+        //VYKONANIE SQL DOTAZU
         public bool ExecuteSql(string sql)
         {
             using (IDbConnection connection = CreateConnection())
@@ -41,7 +41,7 @@ namespace projekt.Data
                 return connection.Execute(sql) > 0;
             }
         }
-
+        //POCET EDITOVANYCH RIADKOV
         public int ExecuteSqlWithRowCount(string sql)
         {
             using (IDbConnection connection = CreateConnection())
@@ -49,7 +49,7 @@ namespace projekt.Data
                 return connection.Execute(sql);
             }
         }
-
+        //ZABEZPECENIE PROTI SQL INJECTION
         public bool ExecuteSqlWithParameters(string sql, List<SqlParameter> parameters)
         {
             using (SqlConnection connection = new SqlConnection(_config.GetConnectionString("DefaultConnection")))

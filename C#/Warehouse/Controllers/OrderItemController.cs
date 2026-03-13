@@ -11,18 +11,19 @@ namespace projekt.Controllers
     public class OrderItemController : ControllerBase
     {
         private readonly DataContextDapper _dapper;
-
+        
+        //DI KONFIGURACIE PRE DATABAZU
         public OrderItemController(IConfiguration config)
         {
             _dapper = new DataContextDapper(config);
         }
-
+        //Endpoint: GET /OrderItem/TestConnection
         [HttpGet("TestConnection")]
         public IActionResult TestConnection()
         {
             return Ok(_dapper.LoadDataSingle<DateTime>("SELECT GETDATE()"));
         }
-
+        //Endpoint: GET /OrderItem/GetOrderItems
         [HttpGet("GetOrderItems")]
         public IActionResult GetOrderItems()
         {
@@ -36,7 +37,7 @@ namespace projekt.Controllers
 
             return Ok(_dapper.LoadData<OrderItem>(sql));
         }
-
+        //Endpoint: GET /OrderItem/GetOrderItem/order_item_id
         [HttpGet("GetOrderItem/{order_item_id}")]
         public IActionResult GetOrderItem(int order_item_id)
         {
@@ -51,7 +52,7 @@ namespace projekt.Controllers
 
             return Ok(_dapper.LoadDataSingle<OrderItem>(sql));
         }
-
+        //Endpoint: POST /OrderItem/AddOrderItem
         [HttpPost("AddOrderItem")]
         public IActionResult AddOrderItem(OrderItem orderItem)
         {
@@ -63,7 +64,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //Endpoint: PUT /OrderItem/EditOrderItem
         [HttpPut("EditOrderItem")]
         public IActionResult EditOrderItem(OrderItem orderItem)
         {
@@ -77,7 +78,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //Endpoint: DELETE /OrderItem/DeleteOrderItem/order_item_id
         [HttpDelete("DeleteOrderItem/{order_item_id}")]
         public IActionResult DeleteOrderItem(int order_item_id)
         {
@@ -87,7 +88,7 @@ namespace projekt.Controllers
 
             return ExecuteSql(sql);
         }
-
+        //HELPER METODA NA VYKONANIE DOTAZU
         private IActionResult ExecuteSql(string sql)
         {
             if (_dapper.ExecuteSql(sql))

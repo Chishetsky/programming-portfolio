@@ -13,6 +13,7 @@ namespace projekt.Helpers
         {
             _config = config;
         }
+        //HASHOVANIE HESLA POMOCOU PBKDF2
         public byte[] GetPasswordHash(string password, byte[] passwordSalt)
         {
             string passwordSaltPlusString = _config.GetSection("AppSettings:PasswordKey").Value +
@@ -27,26 +28,28 @@ namespace projekt.Helpers
             );
         }
 
-
+        //VYTVORENIE JWT TOKENU
         public string CreateToken(int userId)
         {
+            //VYTVORENIE CLAIMOV
             Claim[] claims = new Claim[] {
                 new Claim("userId", userId.ToString())
             };
-            
+            //NACITANIE SECRET KEY Z KONFIGURACIE
             string? tokenKeyString = _config.GetSection("AppSettings:TokenKey").Value;
 
+            //PREVOD SECRET KEY NA SYMETRIC SECURITY KEYs
             SymmetricSecurityKey tokenKey = new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes(
                         tokenKeyString != null ? tokenKeyString : ""
                     )
                 );
-
+            //PODPISOVE PARAMETRE PRE TOKEN
             SigningCredentials credentials = new SigningCredentials(
                     tokenKey, 
                     SecurityAlgorithms.HmacSha512Signature
                 );
-
+            //KONFIGURACIA TOKENU 
             SecurityTokenDescriptor descriptor = new SecurityTokenDescriptor()
                 {
                     Subject = new ClaimsIdentity(claims),

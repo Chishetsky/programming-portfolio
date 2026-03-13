@@ -22,6 +22,7 @@ namespace projekt.Controllers
         private readonly DataContextDapper _dapper;
         private readonly AuthHelper _authHelper;
 
+        //DI KONFIGURACIE PRE DATABAZU
         public AuthController(IConfiguration config)
         {
             _dapper = new DataContextDapper(config);
