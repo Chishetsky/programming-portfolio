@@ -1,5 +1,6 @@
 namespace projekt.Dtos
 {
+    //DTO PRE PRIHLASENIE POUZIVATELA
     public partial class UserForLoginDto
     {
         public string email { get; set; }

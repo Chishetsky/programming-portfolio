@@ -1,5 +1,6 @@
 namespace projekt.Dtos
 {
+    //DTO PRE REGISTRACIU NOVEHO POUZIVATELA
     public partial class UserForRegistrationDto
     {
         public string email { get; set; }

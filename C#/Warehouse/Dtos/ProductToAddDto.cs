@@ -1,5 +1,6 @@
 namespace projekt.Dtos
 {
+    //DTO PRE VYTVORENIE NOVEHO PRODUKTU
     public partial class ProductToAddDto
     {
         public string name { get; set; }

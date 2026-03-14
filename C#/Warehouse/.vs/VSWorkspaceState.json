@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
+    "\\Dtos",
+    "\\Models",
     "\\my-spa",
     "\\my-spa\\src",
     "\\wwwroot",
@@ -11,6 +12,6 @@
     "\\wwwroot\\static\\js",
     "\\wwwroot\\static\\media"
   ],
-  "SelectedNode": "\\Controllers\\UserController.cs",
+  "SelectedNode": "\\Dtos\\OrderItemToAddDto.cs",
   "PreviewInSolutionExplorer": false
 }

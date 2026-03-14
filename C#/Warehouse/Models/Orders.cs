@@ -1,5 +1,6 @@
 namespace projekt.Models
 {
+    //MODEL PRE OBJEDNAVKU Z TABULKY ORDERS
     public partial class Order
     {
         public int order_id { get; set; }

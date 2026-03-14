@@ -1,5 +1,6 @@
 namespace projekt.Models
 {
+    //MODEL PRE KATEGORIU Z TABULKY CATEGORIES
     public partial class Category
     {
         public int category_id { get; set; }

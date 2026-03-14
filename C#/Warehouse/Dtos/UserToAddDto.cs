@@ -1,5 +1,6 @@
 namespace projekt.Dtos
 {
+    //DTO PRE PRIDANIE NOVEHO POUZIVATELA DO SYSTEMU
     public partial class UserToAddDto
     {
         public string username { get; set; }

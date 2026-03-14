@@ -1,5 +1,6 @@
 namespace projekt.Dtos
 {
+    //DTO PRE NACITANIE HASH & SALT PRI OVEROVANI PRIHLASENIA
     public partial class UserForLoginConfirmationDto
     {
         public byte[] PasswordHash { get; set; }

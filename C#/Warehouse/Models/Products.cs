@@ -1,5 +1,6 @@
 namespace projekt.Models
 {
+    //MODEL PRE PRODUKT Z TABULKY PRODUCTS
     public partial class Product
     {
         public int product_id { get; set; }

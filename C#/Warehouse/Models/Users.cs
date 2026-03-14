@@ -1,5 +1,6 @@
 namespace projekt.Models
 {
+    //MODEL PRE UZIVATELA Z TABULKY USERS
     public partial class User
     {
         public int user_id { get; set; }

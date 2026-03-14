@@ -1,5 +1,6 @@
 namespace projekt.Dtos
 {
+    //DTO PRE VYTVORENIE NOVEJ POLOZKY OBJEDNAVKY
     public partial class OrderItemToAddDto
     {
         public int order_id { get; set; }

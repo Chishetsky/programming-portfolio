@@ -1,5 +1,6 @@
 namespace projekt.Dtos
 {
+    //DTO PRE VYTVORENIE NOVEJ OBJEDNAVKY
     public partial class OrderToAddDto
     {
         public int user_id { get; set; }
@@ -12,6 +13,6 @@ namespace projekt.Dtos
             {
                 status = "";
             }
+        }
     }
-}
 }
