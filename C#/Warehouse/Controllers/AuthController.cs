@@ -70,7 +70,7 @@ namespace projekt.Controllers
                     {
                         
                         string sqlAddUser = @"
-                            INSERT INTO [User](
+                            INSERT INTO [Users](
                                 [username],
                                 [password],
                                 [email],
@@ -119,7 +119,7 @@ namespace projekt.Controllers
             }
 
             string userIdSql = @"
-                SELECT user_id FROM [User] WHERE email = '" +
+                SELECT user_id FROM [Users] WHERE email = '" +
                 userForLogin.email + "'";
 
             int userId = _dapper.LoadDataSingle<int>(userIdSql);
@@ -133,7 +133,7 @@ namespace projekt.Controllers
         public string RefreshToken()
         {
             string userIdSql = @"
-                SELECT user_id FROM [User] WHERE user_id = '" +
+                SELECT user_id FROM [Users] WHERE user_id = '" +
                 User.FindFirst("userId")?.Value + "'";
             
             int userId = _dapper.LoadDataSingle<int>(userIdSql);

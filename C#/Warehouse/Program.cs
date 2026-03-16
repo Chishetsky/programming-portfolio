@@ -2,7 +2,6 @@ using System.Text;
 using projekt.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
 
 //VYTVORENIE BUILDERA APLIKACIE
 var builder = WebApplication.CreateBuilder(args);

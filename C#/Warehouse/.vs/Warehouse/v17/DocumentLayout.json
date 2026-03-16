@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\ProductController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ProductController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\OrderItemToAddDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dtos\\OrderItemToAddDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,28 +83,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\ProductController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ProductController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\OrderItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\OrderItemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\OrderController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\OrderController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,11 +98,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Users.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
@@ -110,12 +110,11 @@
               "RelativeToolTip": "Models\\Users.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:55:16.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:55:16.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Products.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Models\\Products.cs",
               "RelativeDocumentMoniker": "Models\\Products.cs",
@@ -123,12 +122,11 @@
               "RelativeToolTip": "Models\\Products.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:53:40.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:53:40.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Orders.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Models\\Orders.cs",
               "RelativeDocumentMoniker": "Models\\Orders.cs",
@@ -136,12 +134,11 @@
               "RelativeToolTip": "Models\\Orders.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:52:29.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:52:29.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "OrderItems.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Models\\OrderItems.cs",
               "RelativeDocumentMoniker": "Models\\OrderItems.cs",
@@ -149,12 +146,11 @@
               "RelativeToolTip": "Models\\OrderItems.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:50:59.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:50:59.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "UserForLoginConfirmationDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\UserForLoginConfirmationDto.cs",
               "RelativeDocumentMoniker": "Dtos\\UserForLoginConfirmationDto.cs",
@@ -162,12 +158,11 @@
               "RelativeToolTip": "Dtos\\UserForLoginConfirmationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:33:37.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:33:37.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ProductToAddDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\ProductToAddDto.cs",
               "RelativeDocumentMoniker": "Dtos\\ProductToAddDto.cs",
@@ -175,12 +170,11 @@
               "RelativeToolTip": "Dtos\\ProductToAddDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:23:49.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:23:49.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "OrderToAddDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\OrderToAddDto.cs",
               "RelativeDocumentMoniker": "Dtos\\OrderToAddDto.cs",
@@ -188,25 +182,24 @@
               "RelativeToolTip": "Dtos\\OrderToAddDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:23:47.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:23:47.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "OrderItemToAddDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\OrderItemToAddDto.cs",
               "RelativeDocumentMoniker": "Dtos\\OrderItemToAddDto.cs",
               "ToolTip": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\OrderItemToAddDto.cs",
               "RelativeToolTip": "Dtos\\OrderItemToAddDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-14T15:23:45.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CategoryToAddDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\CategoryToAddDto.cs",
               "RelativeDocumentMoniker": "Dtos\\CategoryToAddDto.cs",
@@ -214,12 +207,11 @@
               "RelativeToolTip": "Dtos\\CategoryToAddDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:23:33.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T15:23:33.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -227,24 +219,24 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T22:37:23.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T22:37:23.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T22:09:55.962Z"
+              "WhenOpened": "2026-03-13T22:09:55.962Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "OrderItemController.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\OrderItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderItemController.cs",
@@ -256,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "UserToAddDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\UserToAddDto.cs",
               "RelativeDocumentMoniker": "Dtos\\UserToAddDto.cs",
@@ -264,12 +256,11 @@
               "RelativeToolTip": "Dtos\\UserToAddDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T17:32:49.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T17:32:49.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "UserForLoginDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\UserForLoginDto.cs",
               "RelativeDocumentMoniker": "Dtos\\UserForLoginDto.cs",
@@ -277,12 +268,11 @@
               "RelativeToolTip": "Dtos\\UserForLoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T17:32:47.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T17:32:47.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "UserForRegistrationDto.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Dtos\\UserForRegistrationDto.cs",
               "RelativeDocumentMoniker": "Dtos\\UserForRegistrationDto.cs",
@@ -290,12 +280,11 @@
               "RelativeToolTip": "Dtos\\UserForRegistrationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T17:32:37.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T17:32:37.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "AuthHelper.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Helpers\\AuthHelper.cs",
               "RelativeDocumentMoniker": "Helpers\\AuthHelper.cs",
@@ -303,24 +292,24 @@
               "RelativeToolTip": "Helpers\\AuthHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T17:08:32.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T17:08:32.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:24:05.724Z"
+              "WhenOpened": "2026-03-09T13:24:05.724Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "OrderController.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
@@ -332,19 +321,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 2,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
               "ToolTip": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T19:14:36.641Z"
+              "WhenOpened": "2026-03-04T19:14:36.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Categories.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Models\\Categories.cs",
               "RelativeDocumentMoniker": "Models\\Categories.cs",
@@ -352,12 +342,11 @@
               "RelativeToolTip": "Models\\Categories.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T15:17:22.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T15:17:22.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "DataContextDapper.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Data\\DataContextDapper.cs",
               "RelativeDocumentMoniker": "Data\\DataContextDapper.cs",
@@ -365,20 +354,20 @@
               "RelativeToolTip": "Data\\DataContextDapper.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAEMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T15:17:00.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-10T15:17:00.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Portfolio\\programming-portfolio\\C#\\Warehouse\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T15:15:29.696Z"
+              "WhenOpened": "2025-12-10T15:15:29.696Z",
+              "EditorCaption": ""
             }
           ]
         }

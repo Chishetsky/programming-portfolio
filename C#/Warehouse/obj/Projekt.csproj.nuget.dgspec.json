@@ -66,7 +66,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[10.1.5, )"
             },
             "automapper": {
               "target": "Package",

@@ -1,8 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Dtos",
-    "\\Models",
+    "\\Controllers",
     "\\my-spa",
     "\\my-spa\\src",
     "\\wwwroot",
@@ -12,6 +11,6 @@
     "\\wwwroot\\static\\js",
     "\\wwwroot\\static\\media"
   ],
-  "SelectedNode": "\\Dtos\\OrderItemToAddDto.cs",
+  "SelectedNode": "\\Controllers\\AuthController.cs",
   "PreviewInSolutionExplorer": false
 }
